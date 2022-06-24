@@ -60,7 +60,7 @@ body{
     font-weight: bold;
     padding: 20px 10px;
     /* background-color: #DEC6D0; */
-    background: linear-gradient(to top,#DEC6D0,#288767);
+    background: linear-gradient(to top,#DEC6D0,#79d2b4);
     font-size: 1.7rem;
 }
 
@@ -73,6 +73,12 @@ nav a{
     text-decoration: none;
     color: #288767;
     color: darkmagenta;
+}
+/* animacion a los links */
+nav a:hover{
+    display: block;
+    transform: scale(1.3,1.3);
+    transition: transform 0.3s;
 }
 
 .logo{
@@ -106,10 +112,24 @@ nav div{
     margin-top: 15px;
 }
 /*Estilos del banner*/
+/* Animacion al banner */
+@keyframes animationBanner {
+    0%{ content: url(../img/banner.jpg); }   
+    50%{  content: url(../img/producto2.jpg); }
+    100%{  content: url(../img/servicio2.jpg);}
+ }
 header img{    
     width: 80%;
+    height:80vh;
     border-radius: 10px;
+    /* agregando la animacion */
+    animation-name: animationBanner;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s;
 }
+
 
 /*Estilos del contenido principal */
 
@@ -161,9 +181,16 @@ header img{
     border-radius: 20px;
     padding: 5px;
     font-size: 1.2rem;
+    font-weight: 900;
     border:solid 2px darkmagenta;
     /* background-color: rgb(250, 220, 250); */
-    background: linear-gradient(to top,#DEC6D0,rgb(210, 100, 210));
+    background: linear-gradient(to top,#DEC6D0,rgb(230, 133, 230));
+}
+/* Agregando animacion a botones */
+.main article section button:hover{
+    transform: scale(0.95,0.95);
+    font-size: 1.3rem;
+    transition: all 0.3s;
 }
 
 /* estilos para el aside */
