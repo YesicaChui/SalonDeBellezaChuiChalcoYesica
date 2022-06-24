@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+	font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/burbujas_fondo.jpg);
+    background-size: 150px;
+    background-attachment: fixed;
+    font-size: 2rem;
+}
+
+/*estilos para el grid*/
+.navContacto{
+    grid-area: navContacto;
+}
+.nav{
+    grid-area: nav;
+}
+
+.header{
+    grid-area: header;
+    display: none;
+}
+
+.main{
+    grid-area: main;
+}
+
+.aside{
+    grid-area:aside;
+}
+
+.footer{
+    grid-area:footer;
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: 100vw;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"navContacto" 
+    "nav"
+	"main"
+	"aside" 
+	"footer";
+}
+
+/* estilos de la navegacion */
+.datosPrincipales{
+    display: flex;
+    justify-content: center;
+    gap:4vw;
+    color: #288767;    
+    font-weight: bold;
+    padding: 20px 10px;
+    background-color: #DEC6D0;
+    font-size: 1.7rem;
+}
+
+.datosPrincipales li, .menu2{
+    list-style: none;
+    color: darkmagenta;
+}
+
+nav a{
+    text-decoration: none;
+    color: #288767;
+    color: darkmagenta;
+}
+
+.logo{
+    width: 90px;
+    border-radius: 25px;
+    border: solid 1px green;   
+}
+
+nav div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0px 20px;
+    margin-bottom: 20px;
+}
+.menu2{    
+    width: 100%;
+    display:flex; 
+    flex-direction: column;   
+    align-items: center;
+    gap: 20px;    
+}
+.menu2 li a{
+
+    color: darkmagenta;
+    color: #288767;
+    font-weight: 900;
+}
+.nav{
+    margin-top: 15px;
+}
+/*Estilos del banner*/
+header img{    
+    width: 80%;
+    border-radius: 10px;
+}
+
+/*Estilos del contenido principal */
+
+.miTitulo{
+    text-align: center;
+    font-family: 'Merienda';
+    font-size: 25px;
+    color: darkmagenta;
+    font-weight: bold;
+    padding: 0px 20px;
+}
+
+.subtitulo{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.main article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.main article section{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 30px;
+    border: 2px solid #72BEA2;
+    border-radius: 20px;
+    overflow: auto;
+    width: 80%;
+
+}
+.main article section img{
+    max-height: 45vh;
+}
+
+
+
+.main .logo{    
+    margin: 20px;
+}
+
+.main article section button{
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 1.2rem;
+    border:solid 2px darkmagenta;
+    background-color: rgb(250, 220, 250);
+}
+
+/* estilos para el aside */
+aside{
+    text-align: center;
+  }
+  .testimonios section img{
+    width: 36%;
+    border-radius: 18vw;
+    margin-bottom: 30px;
+  }
+  .testimonios section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width:100%;
+    padding: 20px 20px;
+  }
+  .testimonios section span{
+    font-family:  "Fraunces", sans-serif;;
+    color: #000;
+
+  }
+
+
+  .testimonios{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cargo{
+    font-size: 1rem;
+  }
+
+  aside h3{
+      font-family:  "Fraunces", sans-serif;
+      font-size: 2rem;  
+      color: darkmagenta;
+      margin-bottom: 30px;
+      font-weight: 900;
+      letter-spacing: 5px;
+  }
+  aside{
+    padding: 20px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+/* Estilos del footer */
+
+footer{
+    background-color: aqua;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 20px;
+    text-align: center;
+}
+  footer img{
+    width: 70px;
+    margin: 0px 20px;
+}
+
+/* estilo para el formulario de reservas*/
+.main section form{
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 70%;
+    display: inline-block;
+    padding: 20px;
+    border: solid 1px;
+    background-color: #b5ebd7;
+    border-radius: 20px;
+    font-family: 'Merienda';
+    margin-bottom: 20px;
+}
+
+.inputText{
+    text-align: center;
+    width: 90%;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.textLabel{
+    font-size: 2rem;
+    color:#EB8078;   
+    
+}
+.main input{
+    padding:5px
+}
+/* Estilos para la tabla*/
+.containerTable{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px 0px;
+}
+.miTabla{
+    display: inline-block;
+    font-size: 1.2rem;
+    border-collapse: collapse;
+    background-color: white;
+    border: 1px solid #EB8078;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th{
+    font-size: 1.5rem;
+    background-color: #a3bbb2;
+}
+
+th,td{
+    border: 1px solid #EB8078;
+    padding: 5px;
+}
+/* estilos complementarios */
+.centerElement{
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .contenedor{
+        min-height: 100vh;       
+        grid-template-columns: 20% 30% 30% 20%;
+        grid-template-areas: 
+        "navContacto navContacto navContacto navContacto" 
+        "header header header header"
+        "nav main main aside" 
+        "footer footer footer footer";
+    }
+    .header{
+        display: block;
+    }
+    aside{        
+        justify-content: start;
+      }
+
+    .main{
+        margin-bottom: 20px;
+    }
+
+    .mainReservas{
+        margin-top: 20px;
+    }
+
+
+}
