@@ -41,7 +41,7 @@ body{
 
 .contenedor{
     display: grid;
-    grid-template-columns: 100vw;
+    grid-template-columns: 100%;
 	grid-template-rows: auto;
 	grid-template-areas: 
 	"navContacto" 
@@ -199,7 +199,7 @@ aside{
 
   aside h3{
       font-family:  "Fraunces", sans-serif;
-      font-size: 2rem;  
+      font-size: 1.5rem;  
       color: darkmagenta;
       margin-bottom: 30px;
       font-weight: 900;
@@ -290,7 +290,7 @@ th,td{
 
 @media only screen and (min-width: 768px) {
     .contenedor{
-        min-height: 100vh;       
+        min-height: 100%;       
         grid-template-columns: 20% 30% 30% 20%;
         grid-template-areas: 
         "navContacto navContacto navContacto navContacto" 
